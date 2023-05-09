@@ -1,0 +1,32 @@
+<!-- Homework 2 (Session 4)
+      -- Create 2 files index.html and index.js (linked to .html file)
+-- Fill a <select> by coutry names retrieved from the following API
+   https://restcountries.com/v3.1/all
+-- By Selecting any country from the <select> previously filled, show all currencies used
+   in this county as buttons
+-- By Clicking on the button (of each Currency) , show the exchange rate against the USD / $
+   by calling the following API
+   https://api.fastforex.io/fetch-multi -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="index.css" />
+   <title>Homework 2</title>
+</head>
+
+<body>
+   <select id="Countries" onclick="ExchangeRate()">
+      <option>Select a country</option>
+   </select>
+   <div id="div1">
+      <div id="img"></div>
+      <div id="bi"></div>
+   </div>
+   <script src="index.js"></script>
+</body>
+
+</html>
